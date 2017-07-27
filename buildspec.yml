@@ -8,7 +8,7 @@ phases:
     commands:
       - ls -R
       - echo 'Compiling the Java Code'
-      - javac -cp . ./test/HelloWorldTest.java
+      - javac -cp . ./tests/HelloWorldTest.java
   post_build:
     commands:
       - echo "Would deploy here"
