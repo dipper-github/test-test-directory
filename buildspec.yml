@@ -6,6 +6,7 @@ phases:
       - echo 'prebuild'
   build:
     commands:
+      - ls -R
       - echo 'Compiling the Java Code'
       - javac -cp . ./test/HelloWorldTest.java
   post_build:
