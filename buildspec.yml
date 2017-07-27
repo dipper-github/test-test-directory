@@ -1,0 +1,17 @@
+version: 0.1
+
+phases:
+  pre_build:
+    commands:
+      - echo 'prebuild'
+  build:
+    commands:
+      - echo 'Compiling the Java Code'
+      - javac -cp . ./test/HelloWorldTest.java
+  post_build:
+    commands:
+      - echo "Would deploy here"
+artifacts:
+  type: zip
+  files:
+  - '**/*'
